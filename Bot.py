@@ -25,7 +25,7 @@ class Music(commands.Cog):
     
     async def start_nodes(self):
         await self.bot.wait_until_ready()
-        await self.bot.wavelink.initiate_node(host='lavalink-repl.cales.repl.co', port=443, rest_uri='https://lavalink-repl.cales.repl.co/', password='youshallnotpass', identifier='NODE-MAIN-2', region='singapore', secure: True)
+        await self.bot.wavelink.initiate_node(host='lavalink-repl.cales.repl.co', port=443, rest_uri='https://lavalink-repl.cales.repl.co/', password='youshallnotpass', identifier='NODE-MAIN-2', region='singapore', secure=True)
 
     @commands.command(name='ihL3RL3NdA', aliases=["LnqhjsZYXp"])
     async def connect_up(self, ctx, *, channel: discord.VoiceChannel=None):
